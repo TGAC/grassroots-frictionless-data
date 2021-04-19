@@ -357,6 +357,20 @@ json_t *GetDataPackage (const char *name_s, const char *description_s, const cha
 }
 
 
+const char *GetRefSchemaURI (const json_t *field_p)
+{
+	const char *ref_s = NULL;
+	const json_t *items_p = json_object_get (field_p, FD_ITEMS_S);
+
+	if (items_p)
+		{
+			ref_s = GetJSONString (items_p, FD_REF_S);
+		}
+
+	return ref_s;
+}
+
+
 
 static json_t *GetOrCreateConstraints (json_t *field_p)
 {

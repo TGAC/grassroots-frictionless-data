@@ -48,6 +48,10 @@ FD_UTIL_PREFIX const char * const FD_TABLE_FIELDS_S FD_UTIL_VAL ("fields");
 FD_UTIL_PREFIX const char * const FD_DATA_S FD_UTIL_VAL ("data");
 
 
+FD_UTIL_PREFIX const char * const FD_ITEMS_S FD_UTIL_VAL ("items");
+FD_UTIL_PREFIX const char * const FD_REF_S FD_UTIL_VAL ("$ref");
+
+
 /*
  * Table fields
  */
@@ -224,6 +228,15 @@ FD_UTIL_PREFIX const char *FD_TYPE_GEOJSON FD_UTIL_VAL ("geojson");
 
 
 
+/** The field contains JSON objects. */
+FD_UTIL_PREFIX const char *FD_TYPE_JSON_OBJECT FD_UTIL_VAL ("object");
+
+
+/** The field contains JSON arrays. */
+FD_UTIL_PREFIX const char *FD_TYPE_JSON_ARRAY FD_UTIL_VAL ("array");
+
+
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -268,6 +281,10 @@ GRASSROOTS_FRICTIONLESS_DATA_API bool SetTableFieldPattern (json_t *field_p, con
 GRASSROOTS_FRICTIONLESS_DATA_API bool SetTableFieldEnum (json_t *field_p, json_t *enum_p);
 
 GRASSROOTS_FRICTIONLESS_DATA_API json_t *GetDataPackage (const char *name_s, const char *description_s, const char *id_s);
+
+
+GRASSROOTS_FRICTIONLESS_DATA_API const char *GetRefSchemaURI (const json_t *field_p);
+
 
 
 #ifdef __cplusplus
