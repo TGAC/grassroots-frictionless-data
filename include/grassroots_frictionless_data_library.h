@@ -35,17 +35,18 @@
 ** LIB_LOCAL is used for non-api symbols.
 */
 
-#ifdef SHARED_LIBRARY /* defined if LIB is compiled as a DLL */
-  #ifdef  GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS /* defined if we are building the LIB DLL (instead of using it) */
+#ifdef GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS /* defined if we are building the LIB DLL (instead of using it) */
+  #ifdef SHARED_LIBRARY /* defined if LIB is compiled as a DLL */
+    #define GRASSROOTS_FRICTIONLESS_DATA_LOCAL LIB_HELPER_SYMBOL_LOCAL
     #define GRASSROOTS_FRICTIONLESS_DATA_API LIB_HELPER_SYMBOL_EXPORT
   #else
-    #define GRASSROOTS_FRICTIONLESS_DATA_API LIB_HELPER_SYMBOL_IMPORT
-  #endif /* #ifdef GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS */
-  #define GRASSROOTS_FRICTIONLESS_DATA_LOCAL LIB_HELPER_SYMBOL_LOCAL
-#else /* SHARED_LIBRARY is not defined: this means LIB is a static lib. */
-  #define GRASSROOTS_FRICTIONLESS_DATA_API
+    #define GRASSROOTS_FRICTIONLESS_DATA_API
+    #define GRASSROOTS_FRICTIONLESS_DATA_LOCAL
+  #endif /* #ifdef SHARED_LIBRARY */
+#else /* GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS is not defined: this means LIB is a static lib. */
+  #define GRASSROOTS_FRICTIONLESS_DATA_API LIB_HELPER_SYMBOL_IMPORT
   #define GRASSROOTS_FRICTIONLESS_DATA_LOCAL
-#endif /* #ifdef SHARED_LIBRARY */
+#endif /* #ifdef GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS */
 
 #ifdef __cplusplus
 }
