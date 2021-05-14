@@ -23,6 +23,7 @@
     <ProjectGuid>{6B230AB8-020E-4EF9-B13F-69A631184DDD}</ProjectGuid>
     <RootNamespace>grassrootsfdlib</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>grassroots_fd</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -88,6 +89,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS;SHARED_LIBRARY;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\projects\libbson\include;D:\jansson\include;D:\projects\grassroots\core\shared\util\include\containers;D:\projects\grassroots\core\shared\util\include\io;D:\projects\grassroots\core\shared\util\include;D:\projects\grassroots\libs\grassroots-frictionless-data\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -103,6 +106,8 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS;SHARED_LIBRARY;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\projects\libbson\include;D:\jansson\include;D:\projects\grassroots\core\shared\util\include\containers;D:\projects\grassroots\core\shared\util\include\io;D:\projects\grassroots\core\shared\util\include;D:\projects\grassroots\libs\grassroots-frictionless-data\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -120,6 +125,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS;SHARED_LIBRARY;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\projects\libbson\include;D:\jansson\include;D:\projects\grassroots\core\shared\util\include\containers;D:\projects\grassroots\core\shared\util\include\io;D:\projects\grassroots\core\shared\util\include;D:\projects\grassroots\libs\grassroots-frictionless-data\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -139,6 +146,8 @@
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS;SHARED_LIBRARY;WINDOWS</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <AdditionalIncludeDirectories>D:\projects\libbson\include;D:\jansson\include;D:\projects\grassroots\core\shared\util\include\containers;D:\projects\grassroots\core\shared\util\include\io;D:\projects\grassroots\core\shared\util\include;D:\projects\grassroots\libs\grassroots-frictionless-data\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExceptionHandling>false</ExceptionHandling>
+      <CompileAs>CompileAsC</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
