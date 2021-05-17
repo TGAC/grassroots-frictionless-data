@@ -16,7 +16,6 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-
 #ifdef GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS /* defined if we are building the LIB DLL (instead of using it) */
 
   #ifdef ALLOCATE_FD_UTIL_TAGS
@@ -30,7 +29,6 @@
 #else
   #define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
   #define FD_UTIL_VAL(x)
-
 #endif
 
 
@@ -45,6 +43,7 @@ FD_UTIL_PREFIX const char * const FD_PROFILE_TABULAR_PACKAGE_S FD_UTIL_VAL ("tab
 FD_UTIL_PREFIX const char * const FD_PROFILE_TABULAR_RESOURCE_S FD_UTIL_VAL ("tabular-data-resource");
 FD_UTIL_PREFIX const char * const FD_PROFILE_PROPERTY_ORDER_S FD_UTIL_VAL ("propertyOrder");
 FD_UTIL_PREFIX const char * const FD_NAME_S FD_UTIL_VAL ("name");
+FD_UTIL_PREFIX const char * const FD_TITLE_S FD_UTIL_VAL ("title");
 FD_UTIL_PREFIX const char * const FD_ID_S FD_UTIL_VAL ("id");
 FD_UTIL_PREFIX const char * const FD_LICENSES_S FD_UTIL_VAL ("licenses");
 FD_UTIL_PREFIX const char * const FD_DESCRIPTION_S FD_UTIL_VAL ("description");

@@ -35,14 +35,11 @@ ifeq ($(BUILD),release)
 	CFLAGS 	+= -O3 -s
  	LDFLAGS += -s
 else
-#	CFLAGS 	+= -g
-	CFLAGS 	+= -g -pg
-	LDFLAGS += -pg
 	CPPFLAGS += -D_DEBUG
 endif
 	
 
-CPPFLAGS += -DGRASSROOTS_FD_LIBRARY_EXPORTS -DUNIX 
+CPPFLAGS += -DGRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS -DUNIX 
 
 LDFLAGS += -ldl \
 	-L$(DIR_JANSSON_LIB) -ljansson \
