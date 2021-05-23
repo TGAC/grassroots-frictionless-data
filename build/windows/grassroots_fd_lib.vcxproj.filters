@@ -15,15 +15,15 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\..\src\frictionless_data_util.c">
+    <ClCompile Include="..\..\src\frictionless_data_util.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\..\include\frictionless_data_util.h">
+    <ClInclude Include="..\..\include\frictionless_data_util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\include\grassroots_frictionless_data_library.h">
+    <ClInclude Include="..\..\include\grassroots_frictionless_data_library.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
