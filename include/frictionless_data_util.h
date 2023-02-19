@@ -11,7 +11,7 @@
 #include "grassroots_frictionless_data_library.h"
 
 #include "jansson.h"
-#include "bson.h"
+#include "bson/bson.h"
 
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
