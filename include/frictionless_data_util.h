@@ -22,7 +22,7 @@
 	  #define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
 	  #define FD_UTIL_VAL(x)	= x
   #else
-	  #define FD_UTIL_PREFIX extern
+	  #define FD_UTIL_PREFIX extern GRASSROOTS_FRICTIONLESS_DATA_API
 	  #define FD_UTIL_VAL(x)
   #endif
 
