@@ -16,21 +16,14 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-#ifdef GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS /* defined if we are building the LIB DLL (instead of using it) */
 
-  #ifdef ALLOCATE_FD_UTIL_TAGS
-	  #define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
-	  #define FD_UTIL_VAL(x)	= x
-  #else
-	  #define FD_UTIL_PREFIX extern GRASSROOTS_FRICTIONLESS_DATA_API
-	  #define FD_UTIL_VAL(x)
-  #endif
-
+#ifdef ALLOCATE_FD_UTIL_TAGS
+	#define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
+	#define FD_UTIL_VAL(x)	= x
 #else
-  #define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
-  #define FD_UTIL_VAL(x)
+	#define FD_UTIL_PREFIX extern GRASSROOTS_FRICTIONLESS_DATA_API
+	#define FD_UTIL_VAL(x)
 #endif
-
 
 #endif 		/* #ifndef DOXYGEN_SHOULD_SKIP_THIS */
 
