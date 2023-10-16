@@ -239,7 +239,10 @@ FD_UTIL_PREFIX const char *FD_TYPE_JSON_OBJECT FD_UTIL_VAL ("object");
 FD_UTIL_PREFIX const char *FD_TYPE_JSON_ARRAY FD_UTIL_VAL ("array");
 
 
-
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 
 
 GRASSROOTS_FRICTIONLESS_DATA_API json_t *AddTableField (json_t *fields_p, const char *name_s, const char *title_s, const char *type_s, const char *format_s, const char *description_s, const char *rdf_type_s);
