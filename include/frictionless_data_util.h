@@ -16,21 +16,14 @@
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
 
-#ifdef GRASSROOTS_FRICTIONLESS_DATA_LIBRARY_EXPORTS /* defined if we are building the LIB DLL (instead of using it) */
 
-  #ifdef ALLOCATE_FD_UTIL_TAGS
-	  #define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
-	  #define FD_UTIL_VAL(x)	= x
-  #else
-	  #define FD_UTIL_PREFIX extern GRASSROOTS_FRICTIONLESS_DATA_API
-	  #define FD_UTIL_VAL(x)
-  #endif
-
+#ifdef ALLOCATE_FD_UTIL_TAGS
+	#define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
+	#define FD_UTIL_VAL(x)	= x
 #else
-  #define FD_UTIL_PREFIX GRASSROOTS_FRICTIONLESS_DATA_API
-  #define FD_UTIL_VAL(x)
+	#define FD_UTIL_PREFIX extern GRASSROOTS_FRICTIONLESS_DATA_API
+	#define FD_UTIL_VAL(x)
 #endif
-
 
 #endif 		/* #ifndef DOXYGEN_SHOULD_SKIP_THIS */
 
@@ -246,7 +239,10 @@ FD_UTIL_PREFIX const char *FD_TYPE_JSON_OBJECT FD_UTIL_VAL ("object");
 FD_UTIL_PREFIX const char *FD_TYPE_JSON_ARRAY FD_UTIL_VAL ("array");
 
 
-
+#ifdef __cplusplus
+extern "C"
+{
+#endif
 
 
 GRASSROOTS_FRICTIONLESS_DATA_API json_t *AddTableField (json_t *fields_p, const char *name_s, const char *title_s, const char *type_s, const char *format_s, const char *description_s, const char *rdf_type_s);
