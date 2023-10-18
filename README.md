@@ -43,5 +43,5 @@ to install the library into the Grassroots system where it will be available for
 
 ### Windows
 
-Under Windows, there is a Visual Studio project in the `build/windows` folder that allows you to build the geocoder library.
+Under Windows, there is a Visual Studio project in the `build/windows` folder that allows you to build the Frictionless Data library.
 
